@@ -1,0 +1,849 @@
+MPLINK 4.40, Linker
+Linker Map File - Created Sat Jun 18 23:24:24 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+                   .cinit    romdata   0x000006    program   0x000002
+            HighIntVector       code   0x000008    program   0x000006
+           .code___init.o       code   0x00000e    program   0x000002
+        .idata_timer3.o_i    romdata   0x000010    program   0x000000
+        .romdata_timer3.o    romdata   0x000010    program   0x000000
+        .idata_buzzer.o_i    romdata   0x000010    program   0x000000
+        .romdata_buzzer.o    romdata   0x000010    program   0x000000
+      .idata_scan_key.o_i    romdata   0x000010    program   0x000000
+      .romdata_scan_key.o    romdata   0x000010    program   0x000000
+.idata_song_menu_mode.o_i    romdata   0x000010    program   0x000000
+.romdata_song_menu_mode.o    romdata   0x000010    program   0x000000
+.idata_volume_menu_mode.o_i    romdata   0x000010    program   0x000000
+.romdata_volume_menu_mode.o    romdata   0x000010    program   0x000000
+.idata_amtp32m_driver.o_i    romdata   0x000010    program   0x000000
+.romdata_amtp32m_driver.o    romdata   0x000010    program   0x000000
+           .idata_i2c.o_i    romdata   0x000010    program   0x000000
+           .romdata_i2c.o    romdata   0x000010    program   0x000000
+         .idata_voice.o_i    romdata   0x000010    program   0x000000
+         .idata_delay.o_i    romdata   0x000010    program   0x000000
+         .romdata_delay.o    romdata   0x000010    program   0x000000
+.idata_volume_control.o_i    romdata   0x000010    program   0x000000
+.romdata_volume_control.o    romdata   0x000010    program   0x000000
+        .idata_ms6260.o_i    romdata   0x000010    program   0x000000
+        .idata___init.o_i    romdata   0x000010    program   0x000000
+        .romdata___init.o    romdata   0x000010    program   0x000000
+         .idata_c018i.o_i    romdata   0x000010    program   0x000000
+         .romdata_c018i.o    romdata   0x000010    program   0x000000
+            .code_c018i.o       code   0x000010    program   0x000000
+    .idata_voice_test.o_i    romdata   0x000010    program   0x000000
+    .romdata_voice_test.o    romdata   0x000010    program   0x000000
+        .idata_timer0.o_i    romdata   0x000010    program   0x000000
+      .romdata_hardware.o    romdata   0x000010    program   0x000000
+      .idata_hardware.o_i    romdata   0x000010    program   0x000000
+        .romdata_timer0.o    romdata   0x000010    program   0x000000
+             LowIntVector       code   0x000018    program   0x000006
+              .code_i2c.o       code   0x00001e    program   0x00021c
+         .code_scan_key.o       code   0x00023a    program   0x00019a
+       .code_voice_test.o       code   0x0003d4    program   0x000168
+   .code_amtp32m_driver.o       code   0x00053c    program   0x00015a
+           .code_ms6260.o       code   0x000696    program   0x000122
+   .code_volume_control.o       code   0x0007b8    program   0x0000da
+            .code_voice.o       code   0x000892    program   0x0000ce
+               _cinit_scn       code   0x000960    program   0x00009e
+           .code_timer0.o       code   0x0009fe    program   0x00009c
+            .code_delay.o       code   0x000a9a    program   0x00009a
+         .romdata_voice.o    romdata   0x000b34    program   0x000082
+   .code_song_menu_mode.o       code   0x000bb6    program   0x00007c
+           .code_buzzer.o       code   0x000c32    program   0x000066
+ .code_volume_menu_mode.o       code   0x000c98    program   0x000052
+           .code_timer3.o       code   0x000cea    program   0x000046
+                   STRING       code   0x000d30    program   0x000034
+        .romdata_ms6260.o    romdata   0x000d64    program   0x000022
+              D1KTCYXCODE       code   0x000d86    program   0x000020
+                    .code       code   0x000da6    program   0x000020
+             _startup_scn       code   0x000dc6    program   0x00001c
+             D100TCYXCODE       code   0x000de2    program   0x00001c
+         .code_hardware.o       code   0x000dfe    program   0x000018
+              D10TCYXCODE       code   0x000e16    program   0x000016
+.config_300001_voice_test.o    romdata   0x300001    program   0x000001
+.config_300002_voice_test.o    romdata   0x300002    program   0x000001
+.config_300003_voice_test.o    romdata   0x300003    program   0x000001
+.config_300005_voice_test.o    romdata   0x300005    program   0x000001
+.config_300006_voice_test.o    romdata   0x300006    program   0x000001
+.config_300008_voice_test.o    romdata   0x300008    program   0x000001
+.config_300009_voice_test.o    romdata   0x300009    program   0x000001
+.config_30000a_voice_test.o    romdata   0x30000a    program   0x000001
+.config_30000b_voice_test.o    romdata   0x30000b    program   0x000001
+.config_30000c_voice_test.o    romdata   0x30000c    program   0x000001
+.config_30000d_voice_test.o    romdata   0x30000d    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x000002
+                 .tmpdata      udata   0x000002       data   0x000002
+                DELAYDAT1      udata   0x000004       data   0x000001
+                   .stack      udata   0x000e00       data   0x000100
+          .udata_timer0.o      udata   0x000f00       data   0x000011
+           .udata_c018i.o      udata   0x000f11       data   0x00000a
+        .udata_scan_key.o      udata   0x000f1b       data   0x000009
+          .udata_buzzer.o      udata   0x000f24       data   0x000004
+          .udata_ms6260.o      udata   0x000f28       data   0x000003
+  .udata_volume_control.o      udata   0x000f2b       data   0x000001
+      .udata_voice_test.o      udata   0x000f2c       data   0x000001
+          .idata___init.o      idata   0x000f2d       data   0x000000
+          .udata___init.o      udata   0x000f2d       data   0x000000
+           .idata_c018i.o      idata   0x000f2d       data   0x000000
+          .idata_ms6260.o      idata   0x000f2d       data   0x000000
+      .idata_voice_test.o      idata   0x000f2d       data   0x000000
+  .idata_volume_control.o      idata   0x000f2d       data   0x000000
+          .idata_timer0.o      idata   0x000f2d       data   0x000000
+           .idata_delay.o      idata   0x000f2d       data   0x000000
+           .udata_delay.o      udata   0x000f2d       data   0x000000
+           .idata_voice.o      idata   0x000f2d       data   0x000000
+           .udata_voice.o      udata   0x000f2d       data   0x000000
+             .idata_i2c.o      idata   0x000f2d       data   0x000000
+             .udata_i2c.o      udata   0x000f2d       data   0x000000
+  .idata_amtp32m_driver.o      idata   0x000f2d       data   0x000000
+  .udata_amtp32m_driver.o      udata   0x000f2d       data   0x000000
+.idata_volume_menu_mode.o      idata   0x000f2d       data   0x000000
+.udata_volume_menu_mode.o      udata   0x000f2d       data   0x000000
+  .idata_song_menu_mode.o      idata   0x000f2d       data   0x000000
+  .udata_song_menu_mode.o      udata   0x000f2d       data   0x000000
+        .idata_scan_key.o      idata   0x000f2d       data   0x000000
+        .udata_hardware.o      udata   0x000f2d       data   0x000000
+          .idata_buzzer.o      idata   0x000f2d       data   0x000000
+        .idata_hardware.o      idata   0x000f2d       data   0x000000
+          .idata_timer3.o      idata   0x000f2d       data   0x000000
+          .udata_timer3.o      udata   0x000f2d       data   0x000000
+            SFR_UNBANKED0      udata   0x000f77       data   0x000089
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00000f      
+                            0x000018    0x000e2b      
+                            0x300001    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            3631 out of 66584 program addresses used, program memory utilization is 5%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   D100_1   0x000df0    program     static C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+                    D100x   0x000dee    program     static C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+                    D10_1   0x000e26    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                     D10x   0x000e1e    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                    D1K_1   0x000d92    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x000d90    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+             Delay100TCYx   0x000de2    program     extern C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+              Delay10TCYx   0x000e16    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+              Delay1KTCYx   0x000d86    program     extern C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+    HighIntServiceRoutine   0x0003d4    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+        HighIntVectorCode   0x000008    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+     LowIntServiceRoutine   0x0003e6    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+         LowIntVectorCode   0x000018    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+              _2jContinue   0x000d50    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x000d5a    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+       _D100TCYXCODE_0008   0x000dea    program     static C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0012   0x000df4    program     static C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0018   0x000dfa    program     static C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+        _D10TCYXCODE_000A   0x000e20    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x000e22    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x000e24    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D1KTCYXCODE_0010   0x000d96    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x000d9c    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+       ___case_0_lbl00008   0x0004a0    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x000aba    program     static                          
+       ___return_lbl00000   0x00000c    program     static                          
+       ___return_lbl00001   0x000de0    program     static                          
+       ___return_lbl00001   0x00001c    program     static                          
+       ___return_lbl00002   0x0009fc    program     static                          
+       ___return_lbl00003   0x000ae2    program     static                          
+       ___return_lbl00004   0x0004a8    program     static                          
+       ___return_lbl00006   0x000b2a    program     static                          
+       ___return_lbl00027   0x00022e    program     static                          
+       ___return_lbl00028   0x000238    program     static                          
+   ___switchexit_lbl00007   0x0004a6    program     static                          
+        ___while_lbl00001   0x000aa2    program     static                          
+        ___while_lbl00002   0x000aba    program     static                          
+        ___while_lbl00004   0x000aca    program     static                          
+        ___while_lbl00005   0x000ae2    program     static                          
+        ___while_lbl00005   0x000496    program     static                          
+        ___while_lbl00006   0x0004a8    program     static                          
+        ___while_lbl00007   0x000af6    program     static                          
+        ___while_lbl00008   0x000b26    program     static                          
+        ___while_lbl00009   0x000b00    program     static                          
+        ___while_lbl00010   0x000b14    program     static                          
+               __config_0   0x300001    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_1   0x300002    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+              __config_10   0x30000d    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_2   0x300003    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_3   0x300005    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_4   0x300006    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_5   0x300008    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_6   0x300009    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_7   0x30000a    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_8   0x30000b    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_9   0x30000c    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+                   __init   0x00000e    program     extern C:\MCC18\v3_39\src\traditional\stdclib\__init.c
+            __zero_memory   0x000da6    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                _do_cinit   0x000960    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 _startup   0x000dc6    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+             audio_ax_tbl   0x000d64    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+             audio_bx_tbl   0x000d6e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+        audio_command_set   0x0006c6    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+             audio_cx_tbl   0x000d76    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+           audio_data_set   0x000696    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+             audio_db_set   0x000710    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+           audio_turn_off   0x000700    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+            audio_turn_on   0x0006f4    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+         buzzer_count_dec   0x000c5e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+         buzzer_count_set   0x000c68    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+        buzzer_count_time   0x000c7e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+           buzzer_pwm_off   0x000c5a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+            buzzer_pwm_on   0x000c56    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+         buzzer_scan_freq   0x000c32    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+               buzzer_tmd   0x000c42    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+            check_get_key   0x0002fe    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\scan_key.c
+             close_timer0   0x000a0e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+             close_timer3   0x000cfe    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer3.c
+                compare_l   0x000dbc    program     static C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                copy_loop   0x0009d2    program     static                          
+            copy_one_byte   0x0009d8    program     static                          
+cpu_serial_mode_byte_wirte   0x0005a6    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+    cpu_serial_mode_clock   0x000604    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+    cpu_serial_mode_start   0x00053c    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+     cpu_serial_mode_stop   0x000632    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+            deal_read_key   0x000256    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\scan_key.c
+        delay_10_tcyx_wdt   0x000ac2    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\delay.c
+        delay_1k_tcyx_wdt   0x000a9a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\delay.c
+              delay_i2c_1   0x00021a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+              delay_i2c_2   0x000230    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+            delay_sec_wdt   0x000aea    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\delay.c
+       disable_golbal_int   0x000e04    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\hardware.c
+disable_portb_change_interrupt   0x000e10    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\hardware.c
+                     done   0x0009fc    program     static                          
+             done_copying   0x0009e6    program     static                          
+        enable_golbal_int   0x000dfe    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\hardware.c
+enable_portb_change_interrupt   0x000e0a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\hardware.c
+            i2c_byte_read   0x000148    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+           i2c_byte_wirte   0x0000b4    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+      i2c_check_scl_state   0x0001f8    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+                i2c_clock   0x0000a0    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+             i2c_read_ack   0x0001b0    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+            i2c_read_nack   0x0001d8    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+                i2c_start   0x00005a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+                 i2c_stop   0x00007c    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+       initial_peripheral   0x000530    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+              initial_ram   0x0004f2    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+           initial_system   0x0004aa    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+           initial_timer0   0x0009fe    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+           initial_timer3   0x000cea    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer3.c
+        is_voice_play_off   0x0008d0    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\voice.c
+                     jEnd   0x000d62    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                    jLoop   0x000d44    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                     loop   0x000dd6    program     static                          
+                   loop_h   0x000db4    program     static C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   loop_l   0x000dbe    program     static C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     main   0x000490    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+                   memset   0x000d30    program     extern C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+               play_voice   0x000892    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\voice.c
+                 read_key   0x00023a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\scan_key.c
+             scl_gpio_cfg   0x00003c    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+             sda_gpio_cfg   0x00001e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+           song_menu_mode   0x000bb6    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\song_menu_mode.c
+song_menu_mode_updata_key   0x000bee    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\song_menu_mode.c
+                     test   0x00097a    program     static                          
+          timer0_tick_get   0x000a16    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+     timer0_timing_updata   0x000a52    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+            updata_timer3   0x000d06    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer3.c
+     voice_busy_state_get   0x000686    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+     voice_clock_gpio_cfg   0x00056e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+      voice_data_gpio_cfg   0x00058a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+       voice_time_out_get   0x00090c    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\voice.c
+        voice_time_out_no   0x000b34    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\voice.c
+         volume_level_dec   0x000886    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_control.c
+         volume_level_inc   0x000878    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_control.c
+         volume_level_set   0x0007b8    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_control.c
+         volume_menu_mode   0x000c98    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_menu_mode.c
+               zero_block   0x000db4    program     static C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    ANSEL   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ANSELH   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               ANSELHbits   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                ANSELbits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  BAUDCTL   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CM1CON0   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CM1CON0bits   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CM2CON0   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CM2CON0bits   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CM2CON1   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CM2CON1bits   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CVRCON2   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CVRCON2bits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+            DelayCounter1   0x000004       data     extern C:\MCC18\v3_39\src\traditional\delays\delayd1.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   EEADRH   0x000faa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               EEADRHbits   0x000faa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                EEADRbits   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     IOCB   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 IOCBbits   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     LATA   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                       PC   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  PSTRCON   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              PSTRCONbits   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  PWM1CON   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              PWM1CONbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     SIGN   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                   SLRCON   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               SLRCONbits   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   SSPMSK   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               SSPMSKbits   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                        W   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     WPUB   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 WPUBbits   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                __FPFLAGS   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_menu_mode.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\song_menu_mode.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\scan_key.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\timer3.c
+                    audio   0x000f28       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+                   buzzer   0x000f24       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+                curr_byte   0x000f14       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x000f16       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 data_ptr   0x000f18       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     prom   0x000f11       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 scan_key   0x000f1b       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\scan_key.c
+              system_mode   0x000f2c       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+                   timer0   0x000f00       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+             volume_level   0x000f2b       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_control.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+        HighIntVectorCode   0x000008    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+       ___return_lbl00000   0x00000c    program     static                          
+                   __init   0x00000e    program     extern C:\MCC18\v3_39\src\traditional\stdclib\__init.c
+         LowIntVectorCode   0x000018    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+       ___return_lbl00001   0x00001c    program     static                          
+             sda_gpio_cfg   0x00001e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+             scl_gpio_cfg   0x00003c    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+                i2c_start   0x00005a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+                 i2c_stop   0x00007c    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+                i2c_clock   0x0000a0    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+           i2c_byte_wirte   0x0000b4    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+            i2c_byte_read   0x000148    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+             i2c_read_ack   0x0001b0    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+            i2c_read_nack   0x0001d8    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+      i2c_check_scl_state   0x0001f8    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+              delay_i2c_1   0x00021a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+       ___return_lbl00027   0x00022e    program     static                          
+              delay_i2c_2   0x000230    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+       ___return_lbl00028   0x000238    program     static                          
+                 read_key   0x00023a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\scan_key.c
+            deal_read_key   0x000256    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\scan_key.c
+            check_get_key   0x0002fe    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\scan_key.c
+    HighIntServiceRoutine   0x0003d4    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+     LowIntServiceRoutine   0x0003e6    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+                     main   0x000490    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+        ___while_lbl00005   0x000496    program     static                          
+       ___case_0_lbl00008   0x0004a0    program     static                          
+   ___switchexit_lbl00007   0x0004a6    program     static                          
+        ___while_lbl00006   0x0004a8    program     static                          
+       ___return_lbl00004   0x0004a8    program     static                          
+           initial_system   0x0004aa    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+              initial_ram   0x0004f2    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+       initial_peripheral   0x000530    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+    cpu_serial_mode_start   0x00053c    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+     voice_clock_gpio_cfg   0x00056e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+      voice_data_gpio_cfg   0x00058a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+cpu_serial_mode_byte_wirte   0x0005a6    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+    cpu_serial_mode_clock   0x000604    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+     cpu_serial_mode_stop   0x000632    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+     voice_busy_state_get   0x000686    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\amtp32m_driver.c
+           audio_data_set   0x000696    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+        audio_command_set   0x0006c6    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+            audio_turn_on   0x0006f4    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+           audio_turn_off   0x000700    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+             audio_db_set   0x000710    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+         volume_level_set   0x0007b8    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_control.c
+         volume_level_inc   0x000878    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_control.c
+         volume_level_dec   0x000886    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_control.c
+               play_voice   0x000892    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\voice.c
+        is_voice_play_off   0x0008d0    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\voice.c
+       voice_time_out_get   0x00090c    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\voice.c
+                _do_cinit   0x000960    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     test   0x00097a    program     static                          
+                copy_loop   0x0009d2    program     static                          
+            copy_one_byte   0x0009d8    program     static                          
+             done_copying   0x0009e6    program     static                          
+       ___return_lbl00002   0x0009fc    program     static                          
+                     done   0x0009fc    program     static                          
+           initial_timer0   0x0009fe    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+             close_timer0   0x000a0e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+          timer0_tick_get   0x000a16    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+     timer0_timing_updata   0x000a52    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+        delay_1k_tcyx_wdt   0x000a9a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\delay.c
+        ___while_lbl00001   0x000aa2    program     static                          
+       ___return_lbl00000   0x000aba    program     static                          
+        ___while_lbl00002   0x000aba    program     static                          
+        delay_10_tcyx_wdt   0x000ac2    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\delay.c
+        ___while_lbl00004   0x000aca    program     static                          
+        ___while_lbl00005   0x000ae2    program     static                          
+       ___return_lbl00003   0x000ae2    program     static                          
+            delay_sec_wdt   0x000aea    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\delay.c
+        ___while_lbl00007   0x000af6    program     static                          
+        ___while_lbl00009   0x000b00    program     static                          
+        ___while_lbl00010   0x000b14    program     static                          
+        ___while_lbl00008   0x000b26    program     static                          
+       ___return_lbl00006   0x000b2a    program     static                          
+        voice_time_out_no   0x000b34    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\voice.c
+           song_menu_mode   0x000bb6    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\song_menu_mode.c
+song_menu_mode_updata_key   0x000bee    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\song_menu_mode.c
+         buzzer_scan_freq   0x000c32    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+               buzzer_tmd   0x000c42    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+            buzzer_pwm_on   0x000c56    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+           buzzer_pwm_off   0x000c5a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+         buzzer_count_dec   0x000c5e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+         buzzer_count_set   0x000c68    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+        buzzer_count_time   0x000c7e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+         volume_menu_mode   0x000c98    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_menu_mode.c
+           initial_timer3   0x000cea    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer3.c
+             close_timer3   0x000cfe    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer3.c
+            updata_timer3   0x000d06    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer3.c
+                   memset   0x000d30    program     extern C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                    jLoop   0x000d44    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+              _2jContinue   0x000d50    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x000d5a    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+                     jEnd   0x000d62    program     static C:\MCC18\v3_39\src\traditional\stdclib\memset.asm
+             audio_ax_tbl   0x000d64    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+             audio_bx_tbl   0x000d6e    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+             audio_cx_tbl   0x000d76    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+              Delay1KTCYx   0x000d86    program     extern C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x000d90    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x000d92    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x000d96    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x000d9c    program     static C:\MCC18\v3_39\src\traditional\delays\d1ktcyx.asm
+            __zero_memory   0x000da6    program     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   loop_h   0x000db4    program     static C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               zero_block   0x000db4    program     static C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                compare_l   0x000dbc    program     static C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   loop_l   0x000dbe    program     static C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 _startup   0x000dc6    program     extern C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                     loop   0x000dd6    program     static                          
+       ___return_lbl00001   0x000de0    program     static                          
+             Delay100TCYx   0x000de2    program     extern C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0008   0x000dea    program     static C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+                    D100x   0x000dee    program     static C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+                   D100_1   0x000df0    program     static C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0012   0x000df4    program     static C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0018   0x000dfa    program     static C:\MCC18\v3_39\src\traditional\delays\d100tcyx.asm
+        enable_golbal_int   0x000dfe    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\hardware.c
+       disable_golbal_int   0x000e04    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\hardware.c
+enable_portb_change_interrupt   0x000e0a    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\hardware.c
+disable_portb_change_interrupt   0x000e10    program     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\hardware.c
+              Delay10TCYx   0x000e16    program     extern C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                     D10x   0x000e1e    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x000e20    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x000e22    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x000e24    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x000e26    program     static C:\MCC18\v3_39\src\traditional\delays\d10tcyx.asm
+               __config_0   0x300001    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_1   0x300002    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_2   0x300003    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_3   0x300005    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_4   0x300006    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_5   0x300008    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_6   0x300009    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_7   0x30000a    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_8   0x30000b    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+               __config_9   0x30000c    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+              __config_10   0x30000d    program     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+                     SIGN   0x000000       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern C:\MCC18\v3_39\src\traditional\math\cmath18.asm
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\timer3.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\scan_key.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\song_menu_mode.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_menu_mode.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\src\i2c.c
+                  __tmp_0   0x000002       data     static E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+            DelayCounter1   0x000004       data     extern C:\MCC18\v3_39\src\traditional\delays\delayd1.asm
+                   timer0   0x000f00       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\timer0.c
+                     prom   0x000f11       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                curr_byte   0x000f14       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+               curr_entry   0x000f16       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 data_ptr   0x000f18       data     static C:\MCC18\v3_39\src\traditional\startup\c018i.c
+                 scan_key   0x000f1b       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\scan_key.c
+                   buzzer   0x000f24       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\buzzer.c
+                    audio   0x000f28       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\ms6260.c
+             volume_level   0x000f2b       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\src\volume_control.c
+              system_mode   0x000f2c       data     extern E:\WFE\layout\Induction to Report\Program\voice_test\voice_test.c
+                   SSPMSK   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               SSPMSKbits   0x000f77       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               SLRCONbits   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   SLRCON   0x000f78       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CM2CON1bits   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CM2CON1   0x000f79       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CM2CON0   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CM2CON0bits   0x000f7a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CM1CON0   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CM1CON0bits   0x000f7b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     WPUB   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 WPUBbits   0x000f7c       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 IOCBbits   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     IOCB   0x000f7d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    ANSEL   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                ANSELbits   0x000f7e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ANSELH   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               ANSELHbits   0x000f7f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     LATA   0x000f89       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                EEADRbits   0x000fa9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   EEADRH   0x000faa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               EEADRHbits   0x000faa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CVRCON2bits   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CVRCON2   0x000fb4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  PWM1CON   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              PWM1CONbits   0x000fb7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  BAUDCTL   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              PSTRCONbits   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  PSTRCON   0x000fb9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                        W   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                       PC   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\v3_39\src\traditional\proc\p18F26K20.asm
+
+
