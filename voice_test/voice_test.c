@@ -7,7 +7,7 @@
 	* 時       脈 : 內部16M Hz
 	* 編  譯  器  : C18
 	* 撰 寫 日 期 :
-	* 配 合 硬 體 : demo board
+	* 配 合 硬 體 : demo board 1
 	* Change Logs :
 	* Date           Author       Version				
 	  
