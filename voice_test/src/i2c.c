@@ -14,7 +14,7 @@
   
   @details		config sda pin hi or low
   
-  @note			(1)只有out low及input(利用其pull up)                
+  @note			                
                 
   @param[in]	pins_state			0 -> output low，1 -> input hi
 */
